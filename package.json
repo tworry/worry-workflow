@@ -1,0 +1,34 @@
+{
+  "name": "worry-workflow",
+  "version": "1.0.0",
+  "description": "workflow for ie8",
+  "scripts": {
+    "css": "lessc --js src/style/less/index.less src/style/style.css",
+    "mincss": "lessc --js --clean-css src/style/less/index.less src/style/style.min.css",
+    "buildCss": "npm run css && npm run mincss",
+    "watchLess": "node watchLess",
+    "server": "http-server src",
+    "start": "run-p server watchLess"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tworry/worry-workflow.git"
+  },
+  "keywords": [
+    "workflow",
+    "ie8"
+  ],
+  "author": "worry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tworry/worry-workflow/issues"
+  },
+  "homepage": "https://github.com/tworry/worry-workflow#readme",
+  "devDependencies": {
+    "jquery": "^1.9.1",
+    "less": "^3.9.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "node-watch": "^0.6.3",
+    "npm-run-all": "^4.1.5"
+  }
+}

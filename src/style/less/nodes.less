@@ -1,0 +1,73 @@
+.work-content {
+  .w {
+    line-height: 1.5;
+    width: 100px;
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.25s ease-in;
+
+    &.Diamond {
+      width: 50px;
+      height: 50px;
+
+      .iconfont {
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        top: 0;
+        left: 0;
+      }
+
+      .node-text {
+        position: absolute;
+        top: 50px;
+        left: -10px;
+        width: 70px;
+        padding: 4px;
+        word-break: break-all;
+      }
+    }
+
+    &.Rectangle {
+      .node-text {
+        background-color: white;
+        padding: 8px 16px;
+        border: 1px solid #2e6f9a;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+        border-radius: 2px;
+        word-break: break-all;
+      }
+    }
+
+    .iconfont {
+      position: absolute;
+      left: 4px;
+      bottom: 50%;
+      margin-bottom: -8px;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+  }
+
+  .label {
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 1px dashed #346789;
+    cursor: pointer;
+    max-width: 100px;
+    word-break: break-all;
+    z-index: 50;
+  }
+}

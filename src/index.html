@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>worry workflow</title>
+  <!--[if lt IE 9]>
+    <?import namespace="v" implementation="#default#VML" ?>
+  <![endif]-->
+  <link rel="stylesheet" href="lib/font/iconfont.css">
+  <link rel="stylesheet" href="lib/jquery-ui-1.12.1/jquery-ui.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <!-- <div style="width: 500px;height: 500px;z-index: 2000;background: pink;position: absolute;">
+    <svg style="overflow: visible">
+      <path d="M100,100L100,200L200,200" stroke-width="1.4" stroke-linecap="round" fill="none" stroke="#3892D3" ></path>
+      <path stroke="#3892D3" stroke-width="1.4" stroke-linecap="round" fill="none" d="M100,335L258,334"></path>
+      <path pointer-events="all" version="1.1" xmlns="http://www.w3.org/2000/svg" d="M187,9 L177,14 L180.77,9 L177,4 L187,9" class="" stroke="rgb(132, 172, 179)" fill="rgb(132, 172, 179)" transform="translate(3.5,3)"></path>
+    </svg>
+  </div> -->
+
+  <!-- <div style="width: 500px;height: 500px;z-index: 2000;background: pink;position: absolute;">
+      <v:polyline style="z-index:1;left:71;position:absolute;top:225" points="100,335 179,335 179,334 258,334" filled="t" fillcolor="red" strokecolor="blue" />
+  </div> -->
+  <div id="worryWorkflow"></div>
+
+  <script src="lib/jquery.js"></script>
+  <script src="lib/lodash.js"></script>
+  <script src="lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+  <script src="lib/data.js"></script>
+  <script src="lib/data2.js"></script>
+  <script src="lib/worry-workflow-functions.js"></script>
+  <script src="lib/worry-workflow.js"></script>
+  <script>
+    var flow = new WorryFlow({
+      mainId: 'worryWorkflow',
+      editable: false,
+      data: formatData(json),
+    })
+
+  </script>
+</body>
+
+</html>

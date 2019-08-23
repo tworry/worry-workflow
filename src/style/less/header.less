@@ -1,0 +1,57 @@
+.ww-header {
+  .header-btn {
+    width: 40px;
+    height: 40px;
+    border: solid 1px #E0E0E0;
+    color: #555555;
+    background: #fff;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background: #fafafa;
+      color: #333;
+    }
+
+    &:active {
+      background: #e9e9e9;
+    }
+
+    .iconfont {
+      display: block;
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    &.btn-toggle {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+
+
+      .icon-arrawsalt {
+        display: none;
+      }
+
+      .icon-shrink {
+        display: block;
+      }
+
+      &.active {
+        .icon-arrawsalt {
+          display: block;
+        }
+
+        .icon-shrink {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
