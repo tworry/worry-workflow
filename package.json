@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/tworry/worry-workflow#readme",
   "devDependencies": {
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "less": "^3.9.0",
     "less-plugin-clean-css": "^1.5.1",
     "node-watch": "^0.6.3",
